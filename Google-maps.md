@@ -13,7 +13,7 @@ click on share button on your left side see picture
 ![image](/images/screenshot1.png)
 
 The next step is to copy the link from the window that will pop up after you click the share button.  Paste the link in your web page.
-![image](/image/Screenshot2.png)
+![image](/images/Screenshot2.png)
 
 Thats how you Embed a google map in your web page.
 
