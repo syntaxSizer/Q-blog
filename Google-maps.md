@@ -12,3 +12,13 @@ click on share button on your left side see picture
 
 ![image](/images/screenshot1.png)
 
+The next step is to copy the link from the window that will pop up after you click the share button.  Paste the link in your web page.
+![image](/image/screenshot2.png)
+
+Thats how you Embed a google map in your web page.
+
+next we will go through how to make that map responsive, by that i mean to make the map resize according to the size of the screen
+
+to achive this we will have to put some css lines of code , but it's not a big deal
+
+create a continer to warp the map link
