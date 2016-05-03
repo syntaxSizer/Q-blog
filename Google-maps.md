@@ -28,8 +28,8 @@ map responsiveness code
 
 ```
 .google-map {
-            position: relative;  /* note the position of the warpper must be relative
-            padding-bottom: 75%; /* This is the aspect ratio*/
+            position: relative;  //note the position of the warpper must be relative
+            padding-bottom: 75%; // This is the aspect ratio//
             height: 0;
             overflow: hidden;
         }
@@ -40,7 +40,7 @@ next we need to apply some code to the content of google-map class and it's the 
 
 ```
 .google-map iframe {
-            position: absolute; while here it should be absolute
+            position: absolute; // while here it should be absolute
             top: 0;
             left: 0;
             width: 100% ;
