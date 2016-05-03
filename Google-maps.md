@@ -21,5 +21,16 @@ Thats how you Embed a google map in your web page.
 next we will go through how to make that map responsive, by that i mean to make the map resize according to the size of the screen
 
 to achive this we will have to put some css lines of code , but it's not a big deal
-create a 'div' to warp the map link and give it a class name let's say google-maps
-apply this CSS to google-maps class
+create a 'div' to warp the map link and give it a class name let's say google-map
+apply this CSS to google-map class
+
+map responsiveness code
+```
+        .google-map {
+            position: relative;
+            padding-bottom: 75%; /* This is the aspect ratio*/
+            height: 0;
+            overflow: hidden;
+        }
+        ```
+note google-map most be the warpper class of the map
