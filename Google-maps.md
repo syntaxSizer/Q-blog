@@ -40,7 +40,7 @@ next we need to apply some code to the content of google-map class and it's the 
 
 ```
 .google-map iframe {
-            position: absolute; // while here it should be absolute
+            position: absolute;
             top: 0;
             left: 0;
             width: 100% ;
