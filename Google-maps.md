@@ -27,10 +27,24 @@ apply this CSS to google-map class
 map responsiveness code
 ```
         .google-map {
-            position: relative;
+            position: relative;  /* not the position of the warpper must be relative
             padding-bottom: 75%; /* This is the aspect ratio*/
             height: 0;
             overflow: hidden;
         }
         ```
-note google-map most be the warpper class of the map
+Note google-map most be the warpper class of the map
+
+next we need to apply some code to the content of google-map class and it's the iframe tag
+
+```
+  .google-map iframe {
+            position: absolute; while here it should be absolute
+            top: 0;
+            left: 0;
+            width: 100% ;
+            height: 100% ;
+        }
+```
+
+Thats all enjoy a respnsive google map in your web page
