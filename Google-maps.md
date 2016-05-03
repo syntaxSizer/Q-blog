@@ -33,7 +33,7 @@ map responsiveness code
             height: 0;
             overflow: hidden;
         }
-        ```
+
 Note google-map most be the warpper class of the map
 next we need to apply some code to the content of google-map class and it's the iframe tag
 
@@ -46,6 +46,6 @@ next we need to apply some code to the content of google-map class and it's the 
             width: 100% ;
             height: 100% ;
         }
-        ```
+
 
 Thats all enjoy a respnsive google map in your web page
