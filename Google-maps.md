@@ -24,21 +24,21 @@ to achive this we will have to put some css lines of code , but it's not a big d
 create a 'div' to warp the map link and give it a class name let's say google-map
 apply this CSS to google-map class
 
-map responsiveness code
-
 ```
+//map responsiveness code
+
+
 .google-map {
             position: relative;  //note the position of the warpper must be relative
-            padding-bottom: 75%; // This is the aspect ratio//
+            padding-bottom: 75%; // This is the aspect ratio
             height: 0;
             overflow: hidden;
         }
 
-Note google-map most be the warpper class of the map
-next we need to apply some code to the content of google-map class and it's the iframe tag
+//Note google-map most be the warpper class of the map
+//next we need to apply some code to the content of google-map class and it's the iframe tag
 
 
-```
 .google-map iframe {
             position: absolute;
             top: 0;
