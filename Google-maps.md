@@ -35,8 +35,8 @@ map responsiveness code
         }
         ```
 Note google-map most be the warpper class of the map
-
 next we need to apply some code to the content of google-map class and it's the iframe tag
+
 
 ```
 .google-map iframe {
