@@ -24,7 +24,7 @@ to achive this we will have to put some css lines of code , but it's not a big d
 create a 'div' to warp the map link and give it a class name let's say google-map
 apply this CSS to google-map class
 
-```
+```css
 //map responsiveness code
 
 
