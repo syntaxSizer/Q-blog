@@ -5,3 +5,5 @@
 
 The box model is a term used when it come to web design and HTML&CSS
 in HTML&CSS every element considered as a box
+
+![image](/images/box-model.png)
