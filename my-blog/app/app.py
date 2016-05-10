@@ -37,3 +37,41 @@ database = flask_db.database
 
 oembed_providers = bootstrap_basic(OEmbedCache())
 
+
+
+class Entry(flask_db.Model):
+      title = Charfield()
+      slug = CharField(unique = True)
+      content = TextField()
+      published = BooleanFieled(index=True)
+      timestamp = DataTimeField(default=datatime.datetime.now, index=True)
+
+
+      def save(self,*args, **kwargs):
+          if not self.slug:
+             self.slug = re.sub('[^/w]+','-',self.title.lower())
+          ret = super(Entry, self).save(*args, **kwargs)
+
+
+      # store search content. 
+         self.update_search_index()
+         return ret
+
+      def update_search_index(self):
+          try:
+              fts_entry = FTSEntry.get(FTSEntry.entry_id == self.id)
+          except FTSEntry.DoesNotExist:
+              fts_entry = FTSEntry(entry_id=self.id)
+              force_insert = True
+          else:
+              force_entry = False
+          fts_entry.content = '\n'.join((self.title, self.content))
+          fts_entry.save(force_insert = force_insert)
+
+
+ class FTSentry(FTSmodel):
+     entry_id = IntegerField()
+     content = TextField()
+
+     class Meta:
+         database = datatbase
