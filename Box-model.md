@@ -15,3 +15,5 @@ Total element width = width + left padding + right padding + left border + right
 
 to calculate the total height , do this 
 Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+
+Undrestanding the box-model is very importentent and can make your task easier in regard to websites building 
