@@ -12,3 +12,6 @@ it consists of four parts :margins , borders ,padding ,and the actual element eg
 for you to get the total width of an element, should be calculated like this:
 
 Total element width = width + left padding + right padding + left border + right border + left margin + right margin
+
+to calculate the total height , do this 
+Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
